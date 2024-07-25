@@ -1,5 +1,5 @@
-
 ## Overview 
+Multiplayer Game Communication[(EIP7566)](https://eips.ethereum.org/EIPS/eip-7566) is a multiplayer game communication (MGC) interface, using room to match and group players, and using message to process actions between players. This allows one smart contract to handle multiple players playing games on the chain, preventing centralized servers from affecting the fairness of the game.
 
 Common multiplayer games are generally played on centralized servers. Players have no way of knowing whether there are forged data and cheating on the server. The owner of the game server can match players at will, modify scores and levels, and even close and pause the game. If the player's actions all occur on the chain, every message from the chain is proof of the player's instructions and actions, which further ensures the fairness of the game. The Multiplayer Onchain Game framework scales vertically by adding rooms to handle and accommodate multiple players. Write on-chain game logic with custom messages for horizontal expansion, allowing game developers to build multiplayer and fully on-chain games with smart contracts.   
 
@@ -44,3 +44,6 @@ You can use `block.timestamp` or `block.number` to record the latest `sendMessag
 
 This is a multiplayer on-chain game rather than a multiplayer real-time game. The game category depends on the network your contract is deployed on. Some layer 2 networks process blocks very quickly and can make some more real-time games. Generally, the network is more suitable for strategy, trading card, turn-based, chess, sandbox, and settlement.
 
+## Games built with it
+**[ChainChess](https://chainchess.xyz/)**  
+Chain Chess is a fully onchain strategy game.
